@@ -6,7 +6,7 @@ type EventHandler = Parameters<Editor['on']>[1];
 
 // the advanced config will accept any attributes that start with `config-`
 // and try to parse them as JSON or resolve them on the Global state.
-const ADVANCED_CONFIG = false;
+const ADVANCED_CONFIG = true;
 
 enum Status {
   Raw,
@@ -406,4 +406,3 @@ class TinyMceEditor extends HTMLElement {
 export default () => {
   window.customElements.define('tinymce-editor', TinyMceEditor);
 };
-
